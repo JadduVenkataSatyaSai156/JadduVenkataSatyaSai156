@@ -22,7 +22,12 @@ The prototype addresses recurring stakeholder pain points observed around MCA/MC
 3. Verify a company
 4. Resolve an issue
 
-The UI is intentionally a presentational prototype rather than a full MCA backend implementation. It demonstrates the consumer-facing idea: guided journeys, system-confidence indicators, smart search, role-based dashboards, contextual support and transparent compliance timelines.
+The UI is intentionally a presentational prototype rather than a full MCA backend implementation. It demonstrates the consumer-facing idea: guided journeys, system-confidence indicators, smart search, role-based dashboards, contextual support and transparent compliance timelines. It also includes seeded demo data and a demo login for presentation judging.
+
+## Demo credentials
+
+- Email: `founder@mcasetu.demo`
+- Password: `Setu@123`
 
 ## Development
 
