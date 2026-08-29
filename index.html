@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCA Setu — Public Website Redesign Prototype</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="login" class="loginPanel">
+        <form id="login-form">
+          <p class="eyebrow">Try the prototype</p>
+          <h2>Demo login</h2>
+          <label>Email<input id="email" value="founder@mcasetu.demo" /></label>
+          <label>Password<input id="password" type="password" value="Setu@123" /></label>
+          <p id="login-error" class="error" hidden>Use the demo email and password shown below the form.</p>
+          <button type="submit">Enter MCA Setu demo</button>
+          <small>Email: <b>founder@mcasetu.demo</b> • Password: <b>Setu@123</b></small>
+        </form>
+        <div class="loginPreview"><b>Sample compliance wallet</b><span>Fees due this month: ₹1,000</span><span>Refund pending: ₹400</span></div>
+      </section>
+
+      <section class="hero">
+        <nav><div class="brand">🏛️ MCA Setu</div><div class="navlinks"><a href="#research">Research</a><a href="#prototype">Prototype</a><a href="#flow">Flow</a><a href="#dashboard">Demo data</a></div></nav>
+        <div class="heroGrid">
+          <div><p class="eyebrow">Hackathon concept • consumer-side redesign</p><h1>Make corporate compliance feel like a guided service, not a portal maze.</h1><p class="lede">MCA Setu reimagines the Ministry of Corporate Affairs experience around user intent: start, file, verify, resolve. It keeps legal rigor, but adds plain-language journeys, live system confidence, smart forms and transparent support.</p><div class="actions"><a class="primary" href="#prototype">Explore prototype ›</a><a class="secondary" href="#login">Use demo login</a></div></div>
+          <div class="statusCard"><div class="live"><span></span> System confidence: Normal</div><h2>Your Companies</h2><div class="company"><b>Acme Foods Private Limited</b><small>AOC-4 due in 18 days</small><progress value="62" max="100"></progress></div><div class="company"><b>Nava Mobility LLP</b><small>All clear until 30 Oct</small><progress value="100" max="100"></progress></div><button>Continue Form AOC-4</button></div>
+        </div>
+      </section>
+
+      <section id="dashboard" class="section dashboard"><p class="eyebrow">Demo account</p><h2>Seeded consumer dashboard data</h2><div class="demoCreds"><span>🔐 Demo login:</span><b>founder@mcasetu.demo</b><span>Password:</span><b>Setu@123</b></div><div class="dashGrid"><article class="wide"><h3>Companies linked to you</h3><div class="dataRow"><div><b>Acme Foods Private Limited</b><small>U15490KA2022PTC184221</small></div><span>Medium risk</span><span>₹400</span></div><div class="dataRow"><div><b>Nava Mobility LLP</b><small>AAY-4821</small></div><span>Low risk</span><span>₹0</span></div><div class="dataRow"><div><b>Kaveri Textiles Limited</b><small>L17110TG1998PLC029812</small></div><span>Low risk</span><span>₹600</span></div></article><article><h3>Alerts</h3><p>🔔 DSC for one director expires in 11 days.</p><p>🔔 Payment retry window open for SRN AB104299.</p><p>🔔 Two public profile downloads this week.</p></article><article><h3>Public verify</h3><p>🔎 Kaveri Textiles shows 14 years of filings, 2 open charges and 0 prosecution flags.</p><button class="ghost">Download snapshot</button></article></div></section>
+
+      <section id="research" class="section"><p class="eyebrow">What users struggle with</p><h2>Problem map from stakeholder reports, practitioner posts and common helpdesk patterns</h2><div class="cards"><article class="card"><h3>Deadline panic</h3><p>Slowdowns, timeouts and scheduled outages near annual filing peaks make compliance feel risky.</p></article><article class="card"><h3>Confusing identity</h3><p>Registered User vs Business User, DSC association, PAN/email migration and OTP failures create repeated login loops.</p></article><article class="card"><h3>Form uncertainty</h3><p>Prefill data can appear blank or incorrect, uploads fail, PDFs do not generate, and users cannot tell what went wrong.</p></article><article class="card"><h3>Support opacity</h3><p>Tickets feel disconnected from the exact filing step; users lack live status, escalation and recovery paths.</p></article><article class="card"><h3>Trust & privacy</h3><p>Sensitive director/KYC information and payment records need visible consent, masking, audit trails and breach-safe defaults.</p></article><article class="card"><h3>Too expert-first</h3><p>Founders and investors often need public company information or incorporation help without knowing legal form names.</p></article></div></section>
+
+      <section id="prototype" class="section prototype"><div><p class="eyebrow">Design principle</p><h2>One search bar. Four clear jobs.</h2><p>Instead of making users understand MCA service taxonomy first, the home screen asks what they want to do and translates that intent into the correct forms, rules, fees and deadlines.</p><div class="search">🔎 <span>“I need to add a director before annual filing”</span></div></div><div class="jobs"><button class="active" data-tab="founder">Founder</button><button data-tab="professional">CA/CS</button><button data-tab="investor">Investor</button><button data-tab="director">Director</button><div class="persona" id="persona"><p>✅ Company setup wizard</p><p>✅ Name availability preview</p><p>✅ Incorporation timeline</p></div></div></section>
+
+      <section class="section filing"><p class="eyebrow">Random demo filings</p><h2>What a logged-in user would see</h2><div class="filingList"><article><b>AOC-4</b><span>Financial statements</span><em>Draft saved</em><small>18 days left</small></article><article><b>MGT-7</b><span>Annual return</span><em>Needs DSC</em><small>24 days left</small></article><article><b>DIR-3 KYC</b><span>Director KYC</span><em>Submitted</em><small>SRN AA982104</small></article><article><b>RUN</b><span>Name reservation</span><em>Approved</em><small>Valid till 12 Sep</small></article></div></section>
+
+      <section id="flow" class="section"><p class="eyebrow">Suggested IA & flow</p><h2>Consumer-side journeys</h2><div class="journeys"><article class="journey"><h3>Start a company</h3><p><b>1</b>Answer plain-language prompts</p><p><b>2</b>Reserve name with conflict preview</p><p><b>3</b>Upload once, reuse everywhere</p><p><b>4</b>Track approvals on a timeline</p></article><article class="journey"><h3>File compliance</h3><p><b>1</b>Deadline dashboard by company</p><p><b>2</b>Guided form checklist</p><p><b>3</b>Autosave + validation before pay</p><p><b>4</b>SRN, payment and DSC status in one place</p></article><article class="journey"><h3>Verify a company</h3><p><b>1</b>Search by name/CIN/director</p><p><b>2</b>See risk signals and filings</p><p><b>3</b>Download public docs</p><p><b>4</b>Save watchlist alerts</p></article><article class="journey"><h3>Resolve an issue</h3><p><b>1</b>Describe problem in your words</p><p><b>2</b>Attach current screen context</p><p><b>3</b>Get fix steps or ticket ETA</p><p><b>4</b>Escalate before due-date penalty</p></article></div></section>
+
+      <section class="section fixes"><h2>Experience upgrades that elevate existing pain points</h2><ul><li>⏱️ Autosave, queue-aware submissions and deadline-safe retry windows.</li><li>📄 Inline validation, human-readable errors and “what changed since last draft”.</li><li>🛡️ Consent-based document access, masked PII and user-visible audit logs.</li><li>❔ Contextual support tickets tied to SRN, browser, payment and form step.</li><li>🌐 Hindi + regional language explainers without changing legal form language.</li><li>📱 Mobile-first status tracking and OTP/DSC readiness checks.</li><li>👁️ Public company profiles with filings, charges and director changes summarized.</li></ul></section>
+    </main>
+    <script type="module" src="./src/site.js"></script>
+  </body>
+</html>
